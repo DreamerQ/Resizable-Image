@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>resizable Img</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="resizeimg.js"></script>
+</head>
+<body>
+<div class="wrap resizable">
+	<img class="img" src="http://vignette2.wikia.nocookie.net/vinni/images/6/69/A_7c639b12.jpg/revision/latest?cb=20140320080534&path-prefix=ru">
+	<div class="control top"></div>
+	<div class="control right"></div>
+	<div class="control bottom"></div>
+	<div class="control left"></div>
+	<div class="control top-left"></div>
+	<div class="control top-right"></div>
+	<div class="control bottom-right"></div>
+	<div class="control bottom-left"></div>
+</div>
+<script>
+	'use strict';
+	var img = new ResizeImage({
+		elem: document.querySelector('.resizable')
+	});
+</script>
+</body>
+</html>

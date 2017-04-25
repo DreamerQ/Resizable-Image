@@ -1,0 +1,86 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.resizable {
+	position: relative;
+	top: 100px;
+	left: 100px;
+    display: inline-block;
+    border: 1px solid gray;
+	
+}
+
+.img {
+	width: 200px;
+	height: 295px;
+}
+
+.active {
+    border: 1px dashed grey;
+}
+
+.control {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background-color: blue;
+	display: none;
+}
+
+	.top {
+		top: -5px;
+		left: 50%;
+		margin-left: -5px;
+		cursor: n-resize;
+	}
+	.bottom {
+		top: 100%;
+		left: 50%;
+		margin-left: -5px;
+		margin-top: -5px;
+		cursor: n-resize;
+	}
+	.left {
+		top: 50%;
+		margin-top: -5px;
+		margin-left: -5px;
+		cursor: w-resize;
+	}
+	.right {
+		top: 50%;
+		left: 100%;
+		margin-top: -5px;
+		margin-left: -5px;
+		cursor: w-resize;
+	}
+	.top-left {
+		top: -5px;
+		margin-left: -5px;
+		cursor :nw-resize;
+	}
+	.top-right {
+		top: 0;
+		left: 100%;
+		margin-top: -5px;
+		margin-left: -5px;
+		cursor: ne-resize;
+	}
+	.bottom-left {
+		top: 100%;
+		margin-left: -5px;
+		margin-top: -5px;
+		cursor: sw-resize;
+	}
+	.bottom-right {
+		top: 100%;
+		left: 100%;
+		margin-left: -5px;
+		margin-top: -5px;
+		cursor: se-resize;
+	}
+	.visible {
+		display: block;
+	}
+	
